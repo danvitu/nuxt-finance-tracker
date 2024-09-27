@@ -27,7 +27,7 @@ const { toastSuccess, toastError } = useAppToast()
 
 const uploading = ref(false)
 const fileInput = ref() // Reference to an input with ref="fileInput" attribute
-console.log(user.value)
+)
 const saveAvatar = async () => {
   const file = fileInput.value.input.files[0]
   if (!file) {
@@ -35,10 +35,8 @@ const saveAvatar = async () => {
     return
   }
 
-  console.log(file)
   const fileExt = file.name.split('.').pop()
   const fileName = `${Math.random()}.${fileExt}`
-  console.log(fileName)
 
   try {
     uploading.value = true
