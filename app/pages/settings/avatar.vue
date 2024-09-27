@@ -27,7 +27,7 @@ const { toastSuccess, toastError } = useAppToast()
 
 const uploading = ref(false)
 const fileInput = ref() // Reference to an input with ref="fileInput" attribute
-)
+
 const saveAvatar = async () => {
   const file = fileInput.value.input.files[0]
   if (!file) {
